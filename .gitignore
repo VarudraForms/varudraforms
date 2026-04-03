@@ -1,0 +1,27 @@
+.env
+.env.local
+.env.uat
+.env.production
+.env.*.local
+*serviceAccount*.json
+*service-account*.json
+google-credentials.json
+node_modules/
+dist/
+build/
+.vite/
+.DS_Store
+.DS_Store?
+**/.DS_Store
+Thumbs.db
+.vscode/settings.json
+.vscode/*.code-workspace
+# Keep .vscode/extensions.json — useful for team
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.log
+npm-debug.log*
+functions/node_modules/
+functions/.runtimeconfig.json
