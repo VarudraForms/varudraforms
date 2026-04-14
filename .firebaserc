@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "varudraforms-uat",
+    "qa": "varudraforms-uat",
+    "prod": "varudraforms-prod"
+  }
+}
