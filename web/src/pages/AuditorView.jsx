@@ -3,7 +3,7 @@ import { signOut } from 'firebase/auth'
 import { auth } from '../firebase.js'
 import { useAuth } from '../hooks/useAuth.js'
 
-export default function OwnerDashboard() {
+export default function AuditorView() {
   const { user, profile } = useAuth()
 
   async function handleSignOut() {
@@ -12,9 +12,9 @@ export default function OwnerDashboard() {
 
   return (
     <div className="mx-auto max-w-lg px-4 py-10 text-center">
-      <h1 className="text-2xl font-semibold text-slate-900">Owner</h1>
+      <h1 className="text-2xl font-semibold text-slate-900">Auditor</h1>
       <p className="mt-2 text-slate-600">
-        {user?.email} · tenant: {profile?.tenantId ?? '—'}
+        {user?.email} · role: {profile?.role ?? '—'}
       </p>
       <div className="mt-6 flex flex-wrap justify-center gap-3">
         <Link className="text-blue-600 underline" to="/">

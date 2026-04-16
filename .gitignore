@@ -1,8 +1,13 @@
 .env
 .env.local
 .env.uat
+.env.qa
+.env.prod
 .env.production
 .env.*.local
+# Vite only reads env from web/ root — if any .env* lands under src/, keep it untracked
+web/src/.env
+web/src/.env.*
 *serviceAccount*.json
 *service-account*.json
 google-credentials.json

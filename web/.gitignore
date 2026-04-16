@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Secrets (Vite loads from this folder; keep out of Git even if repo root is only `web/`)
+.env
+.env.*
+!.env.example
+!.env.production.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
